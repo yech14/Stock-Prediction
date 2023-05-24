@@ -18,7 +18,7 @@ from collections import deque
 import random
 
 
-df = pd.read_csv("C:/Users/Yechiel/Downloads/בנייה/stock market project/OXY.csv", names=['Date', 'Open', 'High', 'Low', 'Close', 'Volume'])
+df = pd.read_csv("C:/Users/....../stock market project/OXY.csv", names=['Date', 'Open', 'High', 'Low', 'Close', 'Volume'])
 
 SEQ_LEN = 60  # how long of a preceeding sequence to collect for RNN
 FUTURE_PERIOD_PREDICT = 2  # כמה ימים אנו רוצים לצפות עבור המנייה
@@ -106,7 +106,7 @@ def creating_test(df):
 ratios = ["OXY", "OVV", "XLE"]  # המניות שאני מוסיף לניתוח
 for ratio in ratios:  # begin iteration
     print(ratio)
-    dataset = f"C:/Users/Yechiel/Downloads/בנייה/stock market project/{ratio}.csv"  # get the full path to the file.
+    dataset = f"C:/Users/......./stock market project/{ratio}.csv"  # get the full path to the file.
     df = pd.read_csv(dataset, names=['Date', 'Open', 'High', 'Low', 'Close', 'Volume'])  # read in specific file
 
     # rename volume and close to include the ticker so we can still which close/volume is which:
